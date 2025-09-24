@@ -3,7 +3,9 @@ pipeline {
 
     stages {
         stage('checkout') {
-            checkoutRepo()
+            steps{
+                checkoutRepo()
+            }
         }
         stage('Hello') {
             steps {
